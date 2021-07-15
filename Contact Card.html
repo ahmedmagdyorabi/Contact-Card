@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>task 08</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body {
+            background-color: rgb(40, 190, 236);
+        }
+
+
+
+        .contactCard {
+            padding: auto;
+            background-color: white;
+            border: 1px solid rgb(40, 190, 236);
+            border-radius: 20px;
+            height: auto;
+            text-align: center;
+            margin: auto;
+            margin-top: 250px;
+            text-align: center;
+            font-family: arial;
+            width: 50%;
+        }
+
+        img {
+            height: 400px;
+            width: 400px;
+            border-radius: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            top: -200px;
+            position: relative;
+        }
+
+        .name {
+            font-size: 60px;
+            font-weight: bold;
+            margin-top: -130px;
+        }
+
+        .job {
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: gray;
+        }
+
+        .description {
+            font-size: 40px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: gray;
+        }
+
+        i {
+            margin-top: 80px;
+            font-size: 60px;
+            color: gray;
+            opacity: .5;
+        }
+
+        .fa-instagram-square {
+            margin-right: 80px;
+
+        }
+
+        .fa-globe-americas {
+            margin-left: 80px;
+        }
+
+        .results {
+            margin-top: 80px;
+            font-size: 50px;
+            color: gray;
+        }
+
+        .shotsNo {
+            color: rgb(40, 190, 236);
+            font-weight: bold;
+
+        }
+
+        .followersNo {
+            color: rgb(40, 190, 236);
+            font-weight: bold;
+
+        }
+
+        .projectsNo {
+            color: rgb(40, 190, 236);
+            font-weight: bold;
+            margin-top: -110px;
+
+        }
+
+        .shots {
+            float: left;
+            width: 40%;
+        }
+
+        .followers {
+            margin: auto;
+            width: 20%;
+        }
+
+        .projects {
+            float: right;
+            width: 40%;
+        }
+
+
+        #myButton1 {
+            height: 100px;
+            width: 500px;
+            color: white;
+            font-size: 50px;
+            background-color: rgb(40, 190, 236);
+            border: 1px hidden rgb(40, 190, 236);
+            border-radius: 10px;
+            margin-bottom: 60px;
+            margin-top: 60px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="contactCard">
+
+
+        <img src="avatar.jpg" alt="Person">
+        <div class="name">Carlos Sousa</div>
+        <div class="job">Planet Earth</div>
+        <div class="description">Designer making sense of messy<br>stuff in @strata3. Born in <br> Madeira, now in
+            Dublin.</div>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a>
+        <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.google.com/"> <i class="fas fa-globe-americas"></i></a>
+
+        <div style="clear: both;"></div>
+        <div class="results">
+            <div class="shots">
+                <div class="shotsNo">85</div>
+                <div class="shotsTitle">Shots</div>
+
+            </div>
+            <div class="followers">
+                <div class="followersNo">503</div>
+                <div class="followersTitle">Shots</div>
+
+            </div>
+            <div class="projects">
+                <div class="projectsNo">6</div>
+                <div class="projectsTitle">Shots</div>
+
+            </div>
+        </div>
+
+        <div style="clear: both;"></div>
+
+        <input onclick="change()" type="button" value="Follow Me" id="myButton1" />
+
+
+    </div>
+
+
+
+    <!-- <script src="script.js"></script> -->
+    <script>
+        function change() {
+            document.getElementById("myButton1").value = "You Are Following ME";
+            document.getElementById("myButton1").style.fontSize = "40px";
+            document.getElementById("myButton1").style.backgroundColor = "gray";
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/9e78d761c0.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
